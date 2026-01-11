@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">DigitalFatigueDiary(Final Proje)</string>
+
+    <string-array name="seviye_1_5">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="ruh_hali">
+        <item>Iyi</item>
+        <item>Orta</item>
+        <item>Kotu</item>
+    </string-array>
+
+    <string-array name="bildirim_yogunlugu">
+        <item>Dusuk</item>
+        <item>Orta</item>
+        <item>Yuksek</item>
+    </string-array>
+
+</resources>

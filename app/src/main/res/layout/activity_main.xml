@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dijital Yorgunluk Gunlugu"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="@color/text" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ekran kullanimi ile yorgunluk/odak iliskisini gunluk takip edin"
+            android:textSize="14sp"
+            android:textColor="@color/text_muted"
+            android:paddingBottom="12dp" />
+
+        <!-- Bugün Durumu -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvBugunDurum"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bugun kayit: Yok"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/text"
+                android:paddingBottom="6dp" />
+
+            <TextView
+                android:id="@+id/tvBugunOzet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bugun icin kayit ekleyebilirsiniz."
+                android:textSize="14sp"
+                android:textColor="@color/text_muted" />
+        </LinearLayout>
+
+        <!-- Son 7 gün ortalama -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Son 7 Gun Ortalama"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="@color/text"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/tvAvgEkran"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ekran: 0 dk"
+                android:textColor="@color/text" />
+
+            <TextView
+                android:id="@+id/tvAvgYorgunluk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yorgunluk: 0/5"
+                android:textColor="@color/text" />
+
+            <TextView
+                android:id="@+id/tvAvgOdak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Odak: 0/5"
+                android:textColor="@color/text" />
+        </LinearLayout>
+
+        <!-- Butonlar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnKayitEkle"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Yeni Kayit Ekle"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_button_primary" />
+
+            <Button
+                android:id="@+id/btnKayitlar"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginTop="10dp"
+                android:text="Kayitlari Gor"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_button_primary" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

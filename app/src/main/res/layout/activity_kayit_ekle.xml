@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Başlık Kart -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gunluk Kayit Ekle"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="@color/text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ekran suresi ve gun sonu durumunu kaydedin"
+                android:textSize="14sp"
+                android:textColor="@color/text_muted"
+                android:paddingTop="4dp" />
+        </LinearLayout>
+
+        <!-- Form Kart -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:background="@drawable/bg_card"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tarih"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:paddingBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etTarih"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="YYYY-AA-GG (Orn: 2026-01-11)" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ekran Suresi (dakika)"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etEkranDk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Orn: 180"
+                android:inputType="number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yorgunluk Seviyesi (1-5)"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/spYorgunluk"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Odak Seviyesi (1-5)"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/spOdak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ruh Hali"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/spRuhHali"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bildirim Yogunlugu"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp" />
+
+            <Spinner
+                android:id="@+id/spBildirim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Not (Opsiyonel)"
+                android:textStyle="bold"
+                android:textColor="@color/text"
+                android:paddingTop="12dp"
+                android:paddingBottom="6dp" />
+
+            <EditText
+                android:id="@+id/etNot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Orn: Bugun cok fazla bildirim geldi"
+                android:minLines="2" />
+
+            <Button
+                android:id="@+id/btnKaydet"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Kaydet"
+                android:textColor="@android:color/white"
+                android:background="@drawable/bg_button_primary"
+                android:layout_marginTop="16dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
