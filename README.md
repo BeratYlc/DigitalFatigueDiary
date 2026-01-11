@@ -46,7 +46,7 @@ Kullanıcıyı yormayan sade tasarım
 
 Günlük kullanım için hızlı ve pratik ekranlar
 
-🛠 Kullanılan Teknolojiler
+-Kullanılan Teknolojiler
 
 Dil: Java
 
